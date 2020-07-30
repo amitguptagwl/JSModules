@@ -1,0 +1,13 @@
+{
+  "name": "es6module-node_v13_copy",
+  "version": "1.0.0",
+  "description": "node v13 package with ES6 module support",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
