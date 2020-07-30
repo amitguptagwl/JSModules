@@ -99,3 +99,5 @@ import defaultExport, * as name from "module-name";
 import "module-name";
 var promise = import("module-name");
 ```
+
+You can even import the module from URL. Check `vue.html` for more detail which is including `fromUrl.js` to import vue module from URL.
