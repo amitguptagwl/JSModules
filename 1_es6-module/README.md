@@ -46,11 +46,11 @@ You can export when it is declared
 ```js
 export const myNumbers = [1, 2, 3, 4];
 const animals = ['Panda', 'Bear', 'Eagle']; // Not available directly outside the module
-
+//default: only one per module
 export default function myLogger() {
   console.log(myNumbers, animals);
 }
-
+//inline
 export class Alligator {
    constructor() {
      // ...
@@ -60,19 +60,29 @@ export class Alligator {
 
  or in last
  ```js
+ //clause
  export { myNumbers, myLogger, Alligator };
- ```
- Alias
- ```js
+ // with Alias
  export { myNumbers, myLogger as Logger, Alligator }
  ```
 
+default export values
+```js
+export default foo();
+export default /^xyz$/;
+export default 5 * 7;
+export default { no: false, yes: true };
+```
+
+*`default` can't be direct property of module but the property of other objects.
 ## Import
+
+imports are readonoly.
 
 ```js
 //default
 import defaultExport from "module-name";
-//all
+//namespace
 import * as name from "module-name";
 //non-default
 import { export1 } from "module-name";
@@ -81,7 +91,7 @@ import { export1 as alias1 } from "module-name";
 //multiple
 import { export1 , export2 } from "module-name";
 import { foo , bar } from "module-name/path/to/specific/un-exported/file";
-
+//destructure
 import { export1 , export2 as alias2 , [...] } from "module-name";
 //default & non-default
 import defaultExport, { export1 [ , [...] ] } from "module-name";
