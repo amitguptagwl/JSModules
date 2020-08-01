@@ -1,18 +1,18 @@
 # Setup
 
-## ES6 modules
+## ES6 modules (ES2015)
 
-Since new browsers who support ES6, understand ES6 modules, you can directly include module in HTML.
+Since new browser supporting ES6, understands ES6 modules, you can directly include module in HTML.
 
 For this, open index.html
 
 ```html
-<script type="module" src="js/main.js"></script>
+<script type="module" src="src/main.js"></script>
 ```
 
 ## ES5 script
 
-ES5 doesn't support module but scripts only. To generate ES5 script from the same module structure we created under js folder, you first need to setup this project as node project.
+ES5 doesn't support module but scripts only. To generate ES5 script from the same module structure we created under src folder, you first need to setup this project as node project.
 
 ```bash
 $ npm install
@@ -39,7 +39,7 @@ If you use node js to run any js file directly, it'll throw error as it doesn't 
 
 Though you can run `index.html` in browser directly but if you face CORS error, you can run `$ npm start` to start the server.
 
-# ES6 module syntax
+## ES6 module syntax
 
 You can export when it is declared
 
@@ -75,7 +75,7 @@ export default { no: false, yes: true };
 ```
 
 *`default` can't be direct property of module but the property of other objects.
-## Import
+### Import
 
 imports are readonoly.
 
@@ -104,10 +104,16 @@ You can even import the module from URL. Check `vue.html` for more detail which 
 
 ## Node js
 
-To run the same code with node js as well, I have added `"type": "module"` in package.json. Use following command to run code in node js.
+To run the same code with node js as well, I have added `"type": "module"` in package.json. Use following command to run the code with node js.
 
 ```bash
 $ node -v
 v13.14.0
-$ node dist/main.js
+$ node src/main.js
+```
+
+However, webpack fails in this case. as `webpack.config.js` still use old syntax. To solve this, rename `webpack.config.js` to `webpack.config.cjs`. And pass it in webpack command specified in package.json.
+
+```json
+"createEs5Bundle": "webpack --config webpack.config.cjs"
 ```

@@ -81,44 +81,44 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./js/another.mjs":
-/*!************************!*\
-  !*** ./js/another.mjs ***!
-  \************************/
+/***/ "./src/another.mjs":
+/*!*************************!*\
+  !*** ./src/another.mjs ***!
+  \*************************/
 /*! exports provided: anotherModule */
 /***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"anotherModule\", function() { return anotherModule; });\nconst anotherModule = \"loaded\";\n\n//# sourceURL=webpack:///./js/another.mjs?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"anotherModule\", function() { return anotherModule; });\nconst anotherModule = \"loaded\";\n\n//# sourceURL=webpack:///./src/another.mjs?");
 
 /***/ }),
 
-/***/ "./js/main.js":
-/*!********************!*\
-  !*** ./js/main.js ***!
-  \********************/
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _other_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./other.js */ \"./js/other.js\");\n/* harmony import */ var _another_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./another.mjs */ \"./js/another.mjs\");\n//import User from \"/other\" //absolute\n\n\nvar user = new _other_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\"amit\", 31);\nObject(_other_js__WEBPACK_IMPORTED_MODULE_0__[\"printName\"])(user);\nObject(_other_js__WEBPACK_IMPORTED_MODULE_0__[\"printAge\"])(user);\nconsole.log(_another_mjs__WEBPACK_IMPORTED_MODULE_1__[\"anotherModule\"]);\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _other_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./other.js */ \"./src/other.js\");\n/* harmony import */ var _another_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./another.mjs */ \"./src/another.mjs\");\n//import User from \"/other\" //absolute\n\n\nvar user = new _other_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\"amit\", 31);\nObject(_other_js__WEBPACK_IMPORTED_MODULE_0__[\"printName\"])(user);\nObject(_other_js__WEBPACK_IMPORTED_MODULE_0__[\"printAge\"])(user);\nconsole.log(_another_mjs__WEBPACK_IMPORTED_MODULE_1__[\"anotherModule\"]);\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ }),
 
-/***/ "./js/other.js":
-/*!*********************!*\
-  !*** ./js/other.js ***!
-  \*********************/
+/***/ "./src/other.js":
+/*!**********************!*\
+  !*** ./src/other.js ***!
+  \**********************/
 /*! exports provided: default, printName, printAge */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"printName\", function() { return printName; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"printAge\", function() { return printAge; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n//export default class User {\nvar User = function User(name, age) {\n  _classCallCheck(this, User);\n\n  this.name = name;\n  this.age = age;\n}; //export function printName(user){\n\n\nfunction printName(user) {\n  console.log(user.name);\n} //export function printAge(user){\n\n\nfunction printAge(user) {\n  console.log(user.age);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (User);\n\n\n//# sourceURL=webpack:///./js/other.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"printName\", function() { return printName; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"printAge\", function() { return printAge; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n//export default class User {\nvar User = function User(name, age) {\n  _classCallCheck(this, User);\n\n  this.name = name;\n  this.age = age;\n}; //export function printName(user){\n\n\nfunction printName(user) {\n  console.log(user.name);\n} //export function printAge(user){\n\n\nfunction printAge(user) {\n  console.log(user.age);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (User);\n\n\n//# sourceURL=webpack:///./src/other.js?");
 
 /***/ })
 

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "lite-server",
-    "createEs5Bundle": "webpack"
+    "createEs5Bundle": "webpack --config webpack.config.cjs"
   },
   "keywords": [],
   "author": "Amit K Gupta",

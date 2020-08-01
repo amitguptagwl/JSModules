@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
    entry: {
-      app: './js/main.js'
+      app: './src/main.js'
    },
    output: {
       path: path.resolve(__dirname, 'dist'),
@@ -13,7 +13,7 @@ module.exports = {
       rules: [
          {
             test: /\.js$/,
-            include: path.resolve(__dirname, 'js'),
+            include: path.resolve(__dirname, 'src'),
             loader: 'babel-loader',
             query: {
                presets: ['@babel/preset-env']
