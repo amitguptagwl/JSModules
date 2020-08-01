@@ -10,6 +10,8 @@ For this, open index.html
 <script type="module" src="src/main.js"></script>
 ```
 
+Elements in a module are not attached to window object directly. So they can't be accessed in browser console directly.
+
 ## ES5 script
 
 ES5 doesn't support module but scripts only. To generate ES5 script from the same module structure we created under src folder, you first need to setup this project as node project.
@@ -117,3 +119,5 @@ However, webpack fails in this case. as `webpack.config.js` still use old syntax
 ```json
 "createEs5Bundle": "webpack --config webpack.config.cjs"
 ```
+
+File extension is must to inlude a module in another module.
