@@ -101,3 +101,13 @@ var promise = import("module-name");
 ```
 
 You can even import the module from URL. Check `vue.html` for more detail which is including `fromUrl.js` to import vue module from URL.
+
+## Node js
+
+To run the same code with node js as well, I have added `"type": "module"` in package.json. Use following command to run code in node js.
+
+```bash
+$ node -v
+v13.14.0
+$ node dist/main.js
+```

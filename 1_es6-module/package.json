@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is the dummy project to show how JS modules can be directly imported in browser using `type=\"module\"`. For older browser, we're using babeljs to create the bundle file.",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "start": "lite-server",
     "createEs5Bundle": "webpack"
