@@ -1,0 +1,1 @@
+module.exports.anotherModule = "loaded";

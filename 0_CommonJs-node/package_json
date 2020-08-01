@@ -1,0 +1,8 @@
+{
+  "name": "commonjs-demo",
+  "version": "1.0.0",
+  "description": "Run Common JS modules using NodeJs. Transpile using Typescript.",
+  "main": "src/main.js",
+  "type": "commonjs",
+  "author": "Amit K Gupta",
+}
