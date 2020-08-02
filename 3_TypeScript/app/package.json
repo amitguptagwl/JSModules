@@ -1,0 +1,13 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "TypeScript to ES6",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "es6": "tsc --target es6 --module es6 --rootDir src --outDir dist/es6 src/main.ts",
+    "cjs": "tsc --target es6 --module commonjs --rootDir src --outDir ../dist/cjs src/main.ts",
+    "amd": "tsc --target es5 --module amd --rootDir src --outFile ../dist/amd/main.js src/main.ts"
+  },
+  "author": "Amit K Gupta"
+}
