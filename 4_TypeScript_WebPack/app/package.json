@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "TypeScript with Webpack",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev:build": "webpack",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "author": "Amit K Gupta",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
