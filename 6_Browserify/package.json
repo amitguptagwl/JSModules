@@ -1,0 +1,12 @@
+{
+  "name": "browserify_try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify src/main.js -o dist/main.js"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.2"
+  }
+}
