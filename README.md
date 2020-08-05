@@ -3,13 +3,10 @@
 * [2_es6-moduleWithTS](2_es6-moduleWithTS): In this example, previous repo is modifed to generate CommonJs module using TypeScript compiler. I'm still generating ES5 script using webpack. Node js can be used to run both ES6 module and generated CommonJs module. To run ES6 module node js v13 is required. CommonJs modules can be run by any version of node.
 * [3_TypeScript](3_TypeScript): In this example, Our source code is written in TypeScript, and we're converting it to the ES6 modules. We've already seen what else we can do with ES6 module in above examples. Typescript provides the option to convert it in CommonJs, AMD, System or other modules.
 * [4_TypeScript_WebPack](4_TypeScript_WebPack): In this setup, we're generating single bundle file 
+* [5_Deno](5_Deno): Implementation of same TypeScript code with Deno
+* [6_Browserify](6_Browserify): Using browserify to generate the browser bundle instead of webpack.
 
-
-ToDo:
-
-Deno
-Browserify
-    https://www.codota.com/code/javascript/modules/browserify
 
 **Note**
-If `"type": "module"` is set in package.json then `require` is not allowed to use.
+* If `"type": "module"` is set in package.json then `require` is not allowed to use.
+* [babel-node](https://babeljs.io/docs/en/babel-node) can also be used to run js filw with ES6 syntaxes.
